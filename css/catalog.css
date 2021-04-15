@@ -1,0 +1,141 @@
+body{
+ font-family: var(--font-opensans);
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 22px;
+ color: #1E0606;
+}
+
+a{
+ text-decoration: none;
+ color: #1E0606;
+}
+
+.container{
+ max-width: 1180px;
+ width: 100%;
+ margin: 0px auto;
+}
+
+
+/*FORM SEARCH*/
+.search-form {
+ position: relative;
+ width: 300px;
+ height: 24px;
+}
+
+.search-text {
+ height: 24px;
+ width: 0;
+ padding: 0 15px 0;
+ border: none;
+ border-bottom: 2px solid transparent;
+ outline: none;
+ background: transparent;
+ transition: .4s cubic-bezier(0, 0.8, 0, 1);
+ position: absolute;
+ top: 0;
+ right: 0;
+ z-index: 2;
+}
+
+.search-text:focus {
+ width: 200px;
+ z-index: 1;
+ border-bottom: 2px solid #000000;
+}
+
+.search-img {
+ display: block;
+ position: absolute;
+ margin: auto;
+ top: 0;
+ right: 9px;
+}
+
+.search-form:hover {
+ opacity: 0.5;
+}
+
+.search-form:active {
+ opacity: 0.2;
+}
+
+
+/*BREADCRUMBS*/
+
+.breadcrumbs {
+ margin:0;
+ padding: 17px 0 50px;
+ list-style: none;
+}
+
+.breadcrumbs-item {
+ display: inline-block;
+ vertical-align: top;
+ margin-right:20px;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+ content: ">";
+ margin-left: 20px;
+}
+
+.breadcrumbs-link {
+ color: #0b56ea;
+ text-decoration: none;
+}
+
+.breadcrumbs-link:not(span):hover {
+ text-decoration: underline;
+}
+
+.breadcrumbs-link.current {
+ color: #333;
+}
+
+/*CATEGORY*/
+.title-category{
+width: 454px;
+height: 47px;
+font-family: var(--font-montserrat);
+font-style: normal;
+font-weight: bold;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+color: #1E0606;
+margin-left:0px ;
+}
+
+.category-list{
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+padding: 0;
+margin: 0;
+}
+.category-item,
+.category-item-right:not(:nth-child(3n)) {
+margin-right: 20px;
+margin-bottom: 23px;
+}
+
+.category-item+.category-item-right {
+margin-left: auto;
+}
+
+/* DESCRIPTION */
+
+.description {
+ max-width: 680px;
+ width: 100%;
+ margin-left: 200px;
+ padding: 32px 0 39px;
+}
+
+.description-title {
+ margin: 0 0 24px;
+}
